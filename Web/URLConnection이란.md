@@ -26,5 +26,13 @@ URL만 알고 있다면 HTTP 요청 및 응답 전송, 검색, 데이터 읽기 
  </br>
 <img width="100%" height="100%" alt="네이버_안녕검색코드" src="https://user-images.githubusercontent.com/67998815/153979911-d485c682-2743-45b5-93c3-7e1be141e33e.PNG">
 
+</br>
+
+> **읽어오는 html 데이터** </br>
+
+</br>
+
+<img width="100%" alt="네이버_안녕읽어오는값" src="https://user-images.githubusercontent.com/67998815/153980906-930336e2-5c5c-4497-8fdf-49b819e5aad4.PNG">
+</br>
 
 < 작성중 >
