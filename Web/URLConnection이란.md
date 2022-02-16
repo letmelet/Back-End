@@ -107,10 +107,16 @@ URL만 알고 있다면 HTTP 요청 및 응답 전송, 검색, 데이터 읽기 
 #### - URLConnection Method
 
 ```
- - setConnectTimeout (int timeout)
- - setReadTimeOut (int timeout)
- - setDefaultUseCaches (boolean default)
- - setUseCaches (boolean useCaches)
+ - setConnectTimeout (int timeout) : 연결 타임아웃 값을 설정 (단위: millisecond)
+ - setReadTimeOut (int timeout) : 읽기 타임아웃 값을 설정 (단위: millisecond)
+ - setDefaultUseCaches (boolean default) : 기본 캐시 사용여부를 설정(기본값: true) 
+ - setUseCaches (boolean useCaches) : 연결이 캐시를 사용하는지 여부를 설정(기본값: true)
+ - setDoInput (boolean doInput) : URLConnection을 서버에서 컨텐츠를 읽는 데 사용가능한지 설정(기본값: true)
+ - setDoOutput (boolean doOutput)
+ - setIfModifiedSince (long time)
+ - setAllowUserInteraction (boolean allow)
+ - setDefaultAllowUserInteraction (boolean default)
+ - setRequestProperty (String key, String value)
 ```   
 
 
