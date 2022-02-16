@@ -32,7 +32,31 @@ URL만 알고 있다면 HTTP 요청 및 응답 전송, 검색, 데이터 읽기 
 
 </br>
 
-<img width="100%" alt="네이버_안녕읽어오는값" src="https://user-images.githubusercontent.com/67998815/153980906-930336e2-5c5c-4497-8fdf-49b819e5aad4.PNG">
+```
+"data": "<!doctype html>   
+<html lang=\"ko\" data-dark=\"false\"> 
+<head> <meta charset=\"utf-8\"> <title>NAVER</title> <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"> 
+<meta name=\"viewport\" content=\"width=1190\"> <meta name=\"apple-mobile-web-app-title\" content=\"NAVER\"/>   
+<meta name=\"robots\" content=\"index,nofollow\"/>    
+<meta name=\"description\" content=\"네이버 메인에서 다양한 정보와 유용한 컨텐츠를 만나 보세요\"/> <meta property=\"og:title\" content=\"네이버\">   
+<meta property=\"og:url\" content=\"https://www.naver.com/\">   <metaproperty=\"og:image\"content=\"https://s.pstatic.net/static/www/mobile/edit/2016/0705/mobile_212852414260.png\">   
+<meta property=\"og:description\" content=\"네이버 메인에서 다양한 정보와 유용한 컨텐츠를 만나 보세요\"/>  
+       (중략)
+<h3 class=\"blind\">네이버 정책 및 약관</h3> 
+<ul class=\"list_corp\"> <li class=\"corp_item\">
+<a href=\"https://www.navercorp.com\" data-clk=\"intronhn\">회사소개</a></li> 
+<li class=\"corp_item\"><a href=\"https://recruit.navercorp.com/naver/recruitMain\" data-clk=\"recruit\">인재채용</a></li> <li class=\"corp_item\">
+<a href=\"https://www.navercorp.com/naver/proposalGuide\" data-clk=\"contact\">제휴제안</a></li> <li class=\"corp_item\">
+<a href=\"/policy/service.html\" data-clk=\"service\">이용약관</a></li> <li class=\"corp_item\">
+<a href=\"/policy/privacy.html\" data-clk=\"privacy\"><strong>개인정보처리방침</strong></a></li> <li class=\"corp_item\">
+<a href=\"/policy/youthpolicy.html\" data-clk=\"youth\">청소년보호정책</a></li> 
+<li class=\"corp_item\"><a href=\"/policy/spamcheck.html\" data-clk=\"policy\">네이버 정책</a></li> 
+<li class=\"corp_item\"><a href=\"https://help.naver.com/\" data-clk=\"helpcenter\">고객센터</a></li> </ul> <address class=\"addr\">
+<a href=\"https://www.navercorp.com\" target=\"_blank\" data-clk=\"nhn\">ⓒ NAVER Corp.</a></address> 
+</div> </div> </div> </div> <div id=\"adscript\" style=\"display:none\"></div> </body> </html>"
+```
+
 </br>
+
 
 < 작성중 >
