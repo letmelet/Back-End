@@ -24,7 +24,7 @@ URL만 알고 있다면 HTTP 요청 및 응답 전송, 검색, 데이터 읽기 
  > **Code**  </br>
  
  </br>
-<img width="100%" height="100%" alt="네이버_안녕검색코드" src="https://user-images.githubusercontent.com/67998815/153979911-d485c682-2743-45b5-93c3-7e1be141e33e.PNG">
+<img width="80%" height="80%" alt="네이버_안녕검색코드" src="https://user-images.githubusercontent.com/67998815/153979911-d485c682-2743-45b5-93c3-7e1be141e33e.PNG">
 
 </br>
 
