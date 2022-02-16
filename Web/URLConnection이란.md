@@ -90,9 +90,16 @@ URL만 알고 있다면 HTTP 요청 및 응답 전송, 검색, 데이터 읽기 
  **2. URL에서 URLConnection 객체 얻기**
  
  ```
- HttpURLConnection con = (HttpURLConnection) url.openConnection();
+ URLConnection con = url.openConnection(); // urlConnection 객체 생성
+ HttpURLConnection con = (HttpURLConnection) url.openConnection(); // 형변환을 통한 HttpURLConnection 객체 생성
+ HttpsURLConnection con = (HttpsURLConnection) url.openConnection(); // 형변환을 통한 HttpsURLConnection 객체 생성
  ```  
  
+ > URLConnection 클래스는 생성자가 protected로 선언되어있기 때문에 직접 객체생성은 할 수 없다.  
+ > openConnection() 메서드가 리턴하는 URLConnection 객체를 사용하거나 형변환하여 HttpURLConnection 등으로 사용할 수 있다.
+ 
+ </br>
+
 
 
 < 작성중 >
