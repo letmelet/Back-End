@@ -1,4 +1,25 @@
-# URLConnection  
+# URL 이란?
+
+**URL**은 **Uniform Resource Locator**로 이름 그대로 네트워크 상에 있는 인터넷 자원의 위치를 나타내는 주소이다.
+
+</br>
+
+> ### URL 문법
+> - 가장 앞에 접근할 프토로콜을 적는다. ex) => http, ftp
+> - 프로토콜명이 끝나면 ':'(콜론)을 쓴다. ex) => http:  , ftp:
+> - 뒤에 IP, 인터넷 주소가 오는경우 "//"를 적어준다.  ex) => http://www.naver.com
+
+</br>
+
+> ### Java.net의 URL class를 생성할 때 2가지 방법  
+> - URL url = new URL(String spec) -> 문자열을 받아서 처리하는 방법으로 많이 쓰이는 방법이다.  
+>  ex) new URL("https://www.naver.com/")  
+> - URL url = new URL(String protocol, String host, int port, String file) -> 프로토콜, 호스트, 포트, 파일명등을 받아서 처리하는 방법  
+>  ex) new URL("https", "www.naver.com", 80, "filename")  
+
+</br>
+
+# URLConnection 이란?  
 **URLConnection**은 URL을 통해 통신하는 프로그램을 **JAVA**를 사용해 개발할 때 사용한다.  
 URL만 알고 있다면 HTTP 요청 및 응답 전송, 검색, 데이터 읽기 등이 가능한 코드를 만들 수 있다.                                           
  **URLConnection**과 **HttpURLConnection** 클래스 등을 사용한다.  
@@ -57,6 +78,21 @@ URL만 알고 있다면 HTTP 요청 및 응답 전송, 검색, 데이터 읽기 
 ```
 
 </br>
+
+ ## URLConnection 생성 과정  
+ 
+ **1. URL 객체 생성하기**
+ 
+ ```
+ URL url = new URL("https://www.naver.com");
+ ```
+ 
+ **2. URL에서 URLConnection 객체 얻기**
+ 
+ ```
+ HttpURLConnection con = (HttpURLConnection) url.openConnection();
+ ```  
+ 
 
 
 < 작성중 >
