@@ -100,6 +100,21 @@ URL만 알고 있다면 HTTP 요청 및 응답 전송, 검색, 데이터 읽기 
  
  </br>
 
+ **3. URLConnection 요청 방식 설정**  
+ 
+ > 클라이언트와 서버, 서버와 서버 등의 연결을 설정하기 전 다양한 옵션을 설정할 수 있다.    
+ 
+#### - URLConnection Method
+
+```
+ - setConnectTimeout (int timeout)
+ - setReadTimeOut (int timeout)
+ - setDefaultUseCaches (boolean default)
+ - setUseCaches (boolean useCaches)
+```   
+
+
+#### - HttpURLConnection Method
 
 
 < 작성중 >
