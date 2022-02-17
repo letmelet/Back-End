@@ -62,7 +62,9 @@ URL만 알고 있다면 HTTP 요청 및 응답 전송, 검색, 데이터 읽기 
 <meta name=\"description\" content=\"네이버 메인에서 다양한 정보와 유용한 컨텐츠를 만나 보세요\"/> <meta property=\"og:title\" content=\"네이버\">   
 <meta property=\"og:url\" content=\"https://www.naver.com/\">   <metaproperty=\"og:image\"content=\"https://s.pstatic.net/static/www/mobile/edit/2016/0705/mobile_212852414260.png\">   
 <meta property=\"og:description\" content=\"네이버 메인에서 다양한 정보와 유용한 컨텐츠를 만나 보세요\"/>  
+
        (중략)
+       
 <h3 class=\"blind\">네이버 정책 및 약관</h3> 
 <ul class=\"list_corp\"> <li class=\"corp_item\">
 <a href=\"https://www.navercorp.com\" data-clk=\"intronhn\">회사소개</a></li> 
