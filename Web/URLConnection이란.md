@@ -122,7 +122,9 @@ URL만 알고 있다면 HTTP 요청 및 응답 전송, 검색, 데이터 읽기 
 ```   
 
 
-#### - HttpURLConnection Method
+#### - HttpURLConnection Method  
+
+> URLConneciton의 하위 클래스인 HttpURLConnection 클래스는 HTTP관련 기능을 사용한 연결 구성을 위한 메서드를 제공
 
 ```
  - setRequestMethod (String method)
