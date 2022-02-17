@@ -39,7 +39,7 @@ URL만 알고 있다면 HTTP 요청 및 응답 전송, 검색, 데이터 읽기 
  
  > **NAVER에서 안녕을 검색했을 때의 화면**
  </br>
- <img width="100%" height="100%" alt="네이버_안녕검색화면" src="https://user-images.githubusercontent.com/67998815/153976659-0b7a0a13-e890-4deb-ab92-c340c30bded6.PNG">  
+ <img width="75%" height="75%" alt="네이버_안녕검색화면" src="https://user-images.githubusercontent.com/67998815/153976659-0b7a0a13-e890-4deb-ab92-c340c30bded6.PNG">  
  </br>
  
  > **Code**  </br>
