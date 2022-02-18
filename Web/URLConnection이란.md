@@ -158,4 +158,65 @@ URL만 알고 있다면 HTTP 요청 및 응답 전송, 검색, 데이터 읽기 
  
 </br>
 
+**5. 원하는 정보 담아보내기**   
+
+> 연결에서 출력을 활성화를 해야 서버로 데이터를 보낼 수 있다  
+
+```
+urlConnection.setDoOutput(true);
+```
+
+</br>
+
+> Query String 형식으로 데이터를 담아보내기  
+
+```
+ String param = "query=안녕";
+
+ DataOutputStream dataOutputStream = new DataOutputStream(urlConnection.getOutputStream());
+
+ dataOutputStream.writeBytes(param);
+ dataOutputStream.flush();
+ dataOutputStream.close();
+
+```
+
+</br>
+
+> Json형식으로 데이터를 담아보내기  
+
+```
+ JSONObject json = new JSONObject();
+
+ json.put("Key", "Value");
+
+ String param = json.toString(); 
+
+ DataOutputStream dataOutputStream = new DataOutputStream(urlConnection.getOutputStream());
+
+ dataOutputStream.writeBytes(param);
+ dataOutputStream.flush();
+ dataOutputStream.close();
+```
+
+</br>
+
+**6. 전송된 데이터 읽기**  
+
+> **HttpURLConnection**에서는 **getResponseCode()** 메서드를 통해 Http 상태코드를 읽어와 전송의 결과를 알고 그에 따라 대응이 가능하다.
+> ex) 성공시 200 (HttpStatus.OK라는 통신 성공의 값)
+
+</br>
+
+> **InputStream** 생성 후 문자열 읽어오기
+
+```
+InputStream inputStream = urlConnection.getInputStream();
+BufferedReader br = new BufferedReader(new InputStreamReader(inputStream, "UTF-8"));
+```
+
+</br>
+
+
+
 < 작성중 >
