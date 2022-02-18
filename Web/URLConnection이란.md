@@ -237,7 +237,7 @@ URL만 알고 있다면 HTTP 요청 및 응답 전송, 검색, 데이터 읽기 
 
 </br>
 
-> **InputStream** 생성 후 문자열 읽어오기
+> **InputStream** 생성 후 데이터 읽어오기
 
 ```
 InputStream inputStream = urlConnection.getInputStream();
@@ -246,6 +246,30 @@ BufferedReader br = new BufferedReader(new InputStreamReader(inputStream, "UTF-8
 
 </br>
 
+> 데이터를 문자열로 변환  
+
+```
+ StringBuffer stringBuffer = new StringBuffer();
+ String inputLine;
+ 
+ while((inputLine = br.readLine()) != null) {
+     stringBuffer.append(inputLine);
+ }
+ 
+ String result = stringBuffer.toString();
+```  
+
+</br>
+
+> **getInputStream ()** 은 예외처리가 필요  
+> - **IOException** : InputStream 생성시 I/O 오류가 발생한 경우
+> - **SocketTimeOutException** : 데이터를 읽기 전 읽기 제한 시간이 만료되는 경우
+> - **UnknownServiceException** : 프로토콜이 입력을 미지원시
+
+</br>
+
+**7. 연결 해제**  
+
+> **InputStream** 또는 **OutputStream**에서 **close()** 메서드를 호출함으로써 **URLConnection**과 연결된 네트워크 리소스가 해제된다
 
 
-< 작성중 >
