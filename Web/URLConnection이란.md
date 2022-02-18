@@ -110,15 +110,24 @@ URL만 알고 있다면 HTTP 요청 및 응답 전송, 검색, 데이터 읽기 
 
 ```
  - setConnectTimeout (int timeout) : 연결 타임아웃 값을 설정 (단위: millisecond)
+ 
  - setReadTimeOut (int timeout) : 읽기 타임아웃 값을 설정 (단위: millisecond)
+ 
  - setDefaultUseCaches (boolean default) : 기본 캐시 사용여부를 설정(기본값: true) 
+ 
  - setUseCaches (boolean useCaches) : 연결이 캐시를 사용하는지 여부를 설정(기본값: true)
+ 
  - setDoInput (boolean doInput) : URLConnection을 서버에서 컨텐츠를 읽는 데 사용가능한지 설정(기본값: true)
+ 
  - setDoOutput (boolean doOutput) : URLConnection이 서버에 데이터를 보내는 데 사용할 수 있는지 여부를 설정(기본값: false)
+ 
  - setIfModifiedSince (long time) : 클라이언트가 검색한 컨텐츠의 마지막 수정 시간을 설정. 서버가 저장된 시간 이후에 
                                     정적컨텐츠가 변경되지 않았다면 업데이트하지않고 304(수정되지 않음)를 반환
+ 
  - setAllowUserInteraction (boolean allow) : 사용자 상호작용을 활성 또는 비활성(기본값 false)
+ 
  - setDefaultAllowUserInteraction (boolean default) : 이후 모든 URLConnection객체에 대한 사용자 상호작용의 기본값 설정
+ 
  - setRequestProperty (String key, String value) : KEY = VALUE 쌍으로 지정된 일반 요청 속성을 설정. 
                                                    이미 같은 KEY가 있는 경우 이전 값을 새 값으로 덮어씌움 
 ```   
@@ -129,11 +138,19 @@ URL만 알고 있다면 HTTP 요청 및 응답 전송, 검색, 데이터 읽기 
 > URLConneciton의 하위 클래스인 HttpURLConnection 클래스는 HTTP관련 기능을 사용한 연결 구성을 위한 메서드를 제공
 
 ```
- - setRequestMethod (String method)
- - setChunkedStreamingMode (int chunkLength)
- - setFixedLengthStreamingMode (long contentLength)
- - setFollowRedirects (boolean follow)
- - setInstanceFollowRedirects (boolean follow)
+ - setRequestMethod (String method) : HTTP Method인 GET, POST, PUT, PATCH, DELETE, HEAD 등을 설정
+
+ - setChunkedStreamingMode (int chunkLength) : 청크 분할 전송 인코딩. 컨텐츠의 길이를 모를 경우 사용. 
+                                               내부 버퍼링 없이 HTTP Request 본문을 스트리밍 한다
+
+ - setFixedLengthStreamingMode (long contentLength) : 컨텐츠의 길이를 알고 있는 경우 사용. 
+                                                      내부 버퍼링 없이 HTTP Request 본문을 스트리밍 한다 
+
+ - setFollowRedirects (boolean follow) : 이 Static Method는 true로 설정시 HttpURLConnection 객체가 리다이렉트를 따라가고, 
+                                         false시 따라가지 않는다(기본값 : true)
+ 
+ - setInstanceFollowRedirects (boolean follow) : 리다이렉션 후 HttpURLConnection 클래스의 인스턴스가 따라가야하는지를 설정. 
+                                                 미설정시 setFollowRedirects를 따름(기본값 : true)
 ```
 
 </br>
@@ -141,19 +158,31 @@ URL만 알고 있다면 HTTP 요청 및 응답 전송, 검색, 데이터 읽기 
  **4. 헤더필드 읽기**  
  
  ```
-  - getHeaderFields () : 모든 헤더필드를 포함한 맵 반환
-  - getHeaderField (int n) : n번째 헤더 필드의 값 반환
-  - getHeaderField (String name) : 해당 이름의 헤더필드를 반환
-  - getHeaderFieldKey (int n) : n번재 헤드 필드의 키 반환
-  - getHeaderFieldInt (String name, int default) : int형으로 구문 분석된 필드의 값을 반환
-  - getHeaderFielLong (String name, long default) : LONG형으로 구문 분석된 필드의 값을 반환
-  - getHeaderFieldDate (String name, long default) : 날짜와 시간으로 구문 분석된 필드의 값을 반환
-  - getDate () : 서버의 날짜 시간 값을 반환
-  - getExpiration () : expires 필드 값을 반환
-  - getContentEncoding () : 컨텐츠의 인코딩 헤더 필드의 값을 반환
-  - getContentLength () : 컨텐츠 길이 필드의 값을 반환
-  - getContentType () : 컨텐츠 타입 필드의 값을 반환
-  - getLastModified () : last-modified 필드의 값을 반환
+ - getHeaderFields () : 모든 헤더필드를 포함한 맵 반환
+
+ - getHeaderField (int n) : n번째 헤더 필드의 값 반환
+
+ - getHeaderField (String name) : 해당 이름의 헤더필드를 반환
+
+ - getHeaderFieldKey (int n) : n번재 헤드 필드의 키 반환
+
+ - getHeaderFieldInt (String name, int default) : int형으로 구문 분석된 필드의 값을 반환
+
+ - getHeaderFielLong (String name, long default) : LONG형으로 구문 분석된 필드의 값을 반환
+
+ - getHeaderFieldDate (String name, long default) : 날짜와 시간으로 구문 분석된 필드의 값을 반환
+
+ - getDate () : 서버의 날짜 시간 값을 반환
+
+ - getExpiration () : expires 필드 값을 반환
+
+ - getContentEncoding () : 컨텐츠의 인코딩 헤더 필드의 값을 반환
+
+ - getContentLength () : 컨텐츠 길이 필드의 값을 반환
+
+ - getContentType () : 컨텐츠 타입 필드의 값을 반환
+
+ - getLastModified () : last-modified 필드의 값을 반환
  ```
  
 </br>
@@ -163,7 +192,7 @@ URL만 알고 있다면 HTTP 요청 및 응답 전송, 검색, 데이터 읽기 
 > 연결에서 출력을 활성화를 해야 서버로 데이터를 보낼 수 있다  
 
 ```
-urlConnection.setDoOutput(true);
+ urlConnection.setDoOutput(true);
 ```
 
 </br>
