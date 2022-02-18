@@ -136,4 +136,26 @@ URL만 알고 있다면 HTTP 요청 및 응답 전송, 검색, 데이터 읽기 
  - setInstanceFollowRedirects (boolean follow)
 ```
 
+</br>
+
+ **4. 헤더필드 읽기**  
+ 
+ ```
+  - getHeaderFields () : 모든 헤더필드를 포함한 맵 반환
+  - getHeaderField (int n) : n번째 헤더 필드의 값 반환
+  - getHeaderField (String name) : 해당 이름의 헤더필드를 반환
+  - getHeaderFieldKey (int n) : n번재 헤드 필드의 키 반환
+  - getHeaderFieldInt (String name, int default) : int형으로 구문 분석된 필드의 값을 반환
+  - getHeaderFielLong (String name, long default) : LONG형으로 구문 분석된 필드의 값을 반환
+  - getHeaderFieldDate (String name, long default) : 날짜와 시간으로 구문 분석된 필드의 값을 반환
+  - getDate () : 서버의 날짜 시간 값을 반환
+  - getExpiration () : expires 필드 값을 반환
+  - getContentEncoding () : 컨텐츠의 인코딩 헤더 필드의 값을 반환
+  - getContentLength () : 컨텐츠 길이 필드의 값을 반환
+  - getContentType () : 컨텐츠 타입 필드의 값을 반환
+  - getLastModified () : last-modified 필드의 값을 반환
+ ```
+ 
+</br>
+
 < 작성중 >
