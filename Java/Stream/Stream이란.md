@@ -38,34 +38,43 @@
 - 컬렉션 Stream 생성 </br>
 
 ```
-
+Stream<Integer> stream = new ArrayList<Integer>().stream();
 ```
 
 - 배열 Stream 생성 </br>
 
 ```
-
+Integer[] array = new Integer[]{1,2,3,4};
+       
+Stream<Integer> stream = Arrays.stream(array);
 ```
 
 
 - 람다식 Stream 생성 </br>
 
 ```
-
+Stream<Integer> stream = Stream.iterate(1,x -> x+1);
 ```
 
 
 - 연속된 정수 Stream 생성 </br>
 
 ```
+IntStream stream1 = IntStream.range(0,10); 
+  // range : 시작 정수부터 마지막 정수는 포함하지 않는 범위 (0 ~ 9)
+```
 
 ```
+IntStream stream2 = IntStream.rangeClosed(0,10);
+  // rangeClosed : 시작 정수부터 마지막 정수까지 포함하는 범위 (0 ~ 10)
+```
+
 
 - 빈 Stream 생성 </br>
 
 
 ```
-
+Stream<Object> stream = Stream.empty();
 ```
 
 
