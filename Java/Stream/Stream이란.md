@@ -61,12 +61,12 @@ Stream<Integer> stream = Stream.iterate(1,x -> x+1);
 
 ```
 IntStream stream1 = IntStream.range(0,10); 
-  // range : 시작 정수부터 마지막 정수는 포함하지 않는 범위 (0 ~ 9)
+ // range : 시작 정수부터 마지막 정수는 포함하지 않는 범위 (0 ~ 9)
 ```
 
 ```
 IntStream stream2 = IntStream.rangeClosed(0,10);
-  // rangeClosed : 시작 정수부터 마지막 정수까지 포함하는 범위 (0 ~ 10)
+ // rangeClosed : 시작 정수부터 마지막 정수까지 포함하는 범위 (0 ~ 10)
 ```
 
 
