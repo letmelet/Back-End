@@ -80,9 +80,15 @@ Stream<Object> stream = Stream.empty();
 
 ## Stream 가공하기 </br>
 
--        
+- 필터링       
 
--        
+- 변환
+
+- 제한
+
+- 정렬 
+
+- 특정 연산 수행    
 
 ## Stream 결과만들기 </br>
 
