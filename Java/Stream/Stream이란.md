@@ -101,11 +101,15 @@ stream.map(s -> s.toUpperCase());
 
 ```
 IntStream stream1 = IntStream.range(0,10);
-IntStream stream2 = IntStream.range(0,10);
 
 stream1.limit(3).forEach(n -> System.out.print(n + " ");
   // 스트림의 첫 번째 요소부터 limit 개수 만큼의 요소만으로 이루어진 스트림 반환
   // 실행결과 : 0 1 2
+```  
+  
+```
+IntStream stream2 = IntStream.range(0,10);
+
 stream2.skip(3).forEach(n -> System.out.print(n + " ");
   // 스트림의 첫 번째 요소부터 skip 개수 만큼 제외한 나머지 요소만으로 이루어진 스트림 반환
   // 실행결과 : 3 4 5 6 7 8 9
