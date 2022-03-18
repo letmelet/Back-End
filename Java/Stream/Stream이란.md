@@ -80,15 +80,46 @@ Stream<Object> stream = Stream.empty();
 
 ## Stream 가공하기 </br>
 
-- 필터링       
+- 필터링       </br>
+
+```
+IntStream stream1 = IntStream.range(0,10);
+stream1.filter(n-> n%2 = 0);
+ // 0~9 까지의 정수중 짝수만 남게 필터링
+```
+
 
 - 변환  
 
-- 제한 
+```
+Stream<String> stream = Stream.of("Hello", "java", "spring", "backEnD");
+stream.map(s -> s.toUpperCase());
+  // 스트림의 문자들을 대문자로 변환
+```
+
+- 제한  
+
+```
+IntStream stream1 = IntStream.range(0,10);
+IntStream stream2 = IntStream.range(0,10);
+
+stream1.limit(3).forEach(n -> System.out.print(n + " ");
+  // 스트림의 첫 번째 요소부터 limit 개수 만큼의 요소만으로 이루어진 스트림 반환
+  // 실행결과 : 0 1 2
+stream2.skip(3).forEach(n -> System.out.print(n + " ");
+  // 스트림의 첫 번째 요소부터 skip 개수 만큼 제외한 나머지 요소만으로 이루어진 스트림 반환
+  // 실행결과 : 3 4 5 6 7 8 9
+```
 
 - 정렬   
 
+```
+```
+
 - 특정 연산 수행                     
+
+```
+```
 
 ## Stream 결과만들기 </br>
 
