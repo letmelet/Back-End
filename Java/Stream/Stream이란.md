@@ -118,6 +118,10 @@ stream2.skip(3).forEach(n -> System.out.print(n + " ");
 - 정렬   
 
 ```
+Stream<String> stream = Stream.of("Hello", "java", "spring", "backEnD");
+stream.sorted().forEach(s -> System.out.print(s + " ");
+  // 오름차순으로 정렬.
+  // 실행결과 : backEnD Hello java spring
 ```
 
 - 특정 연산 수행                     
