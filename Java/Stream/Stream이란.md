@@ -127,6 +127,7 @@ stream.sorted().forEach(s -> System.out.print(s + " ");
 - 특정 연산 수행                     
 
 ```
+peek()
 ```
 
 ## Stream 결과만들기 </br>
