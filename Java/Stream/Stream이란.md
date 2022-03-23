@@ -127,7 +127,34 @@ stream.sorted().forEach(s -> System.out.print(s + " ");
 - 특정 연산 수행                     
 
 ```
-peek()
+IntStream stream = IntStream.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+
+stream.peek(s -> System.out.println("Original Stream : " + s))
+      .skip(2)
+      .forEach(n -> System.out.println(n));
+```
+
+```
+// 실행결과
+
+Original Stream : 1
+Original Stream : 2
+Original Stream : 3
+3
+Original Stream : 4
+4
+Original Stream : 5
+5
+Original Stream : 6
+6
+Original Stream : 7
+7
+Original Stream : 8
+8
+Original Stream : 9
+9
+Original Stream : 10
+10
 ```
 
 ## Stream 결과만들기 </br>
