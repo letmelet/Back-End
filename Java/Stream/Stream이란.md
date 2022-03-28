@@ -71,7 +71,7 @@ IntStream stream2 = IntStream.rangeClosed(0,10);
 
 
 - 빈 Stream 생성 </br>
-
+  
 
 ```
 Stream<Object> stream = Stream.empty();
