@@ -90,7 +90,7 @@ stream1.filter(n-> n%2 = 0);
 
 
 - 변환  
-
+ 
 ```
 Stream<String> stream = Stream.of("Hello", "java", "spring", "backEnD");
 stream.map(s -> s.toUpperCase());
