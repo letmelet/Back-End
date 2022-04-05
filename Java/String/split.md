@@ -24,9 +24,9 @@ for(String s : splitString) {
 > def </br>
 > ghi </br>
 
+ </br>
 
-
-#### split(String regex, int limit)
+#### split(String regex, int limit)  </br>
 
 > regex(정규표현식)을 기준으로 문자열을 나눌 때, 배열의 크기는 limit를 넘지않는다.
 
@@ -50,8 +50,10 @@ for(String s : splitString) {
 > 
 > 공백(" ")으로 잘 나눠지다가 limit 5에 도달하자 더이상 나누지 않고 마지막 배열에 나머지 문자열이 다 들어간다.
 
+ </br>
 
-#### split() 마지막 공백 포함하여 처리하기
+
+#### split() 마지막 공백 포함하여 처리하기  </br>
 
 ```
 String str = "a,b,c,,d,";
