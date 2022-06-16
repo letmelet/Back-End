@@ -8,3 +8,5 @@ Model, View, Controller로 이루어진 디자인 패턴
 
 뷰에서 사용자에게 보여준다
 
+  
+
