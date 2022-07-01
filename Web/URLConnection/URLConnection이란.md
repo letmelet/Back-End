@@ -1,6 +1,6 @@
 # URL 이란?
 
-**URL**은 **Uniform Resource Locator**로 이름 그대로 네트워크 상에 있는 인터넷 자원의 위치를 나타내는 주소이다.
+**URL**은 **Uniform Resource Locator**로 이름 그대로 네트워크 상에 있는 인터넷 자원의 위치를 나타내는 주소이다. 
 
 </br>
 
