@@ -42,16 +42,23 @@ JAVA의 예외는 크게 두가지로 나뉜다.
 
 ## 체크 예외의 단점
 
-1. 예외 클래스에 의존적이게 된다.
-
-예를들어 SQLException의 경우 Repository 단에서 해결이 안된다면 Service 단으로 던져야하고 거기서도 해결이 안되면 Controller, WAS까지 던지게 된다.
-
-중간에서 예외를 처리한다고 해도 throw SQLException이나 try/catch에서 SQLException을 의존하게 되고 상황이 바뀌어 JPA를 쓴다고 가정했을때 모든 코드를 변경해야한다.
-
-
-2. 대부분의 예외는 해결이 불가능하다. 하지만 Service, Controller등이 이 예외를 알고있어야 한다.
+대부분의 예외는 해결이 불가능하다. 하지만 Service, Controller등이 이 예외를 알고있어야 한다.
 
 RuntimeException을 사용하면 이런 복구 불가능한 예외를 신경쓰지않아도 된다.
+
+<br>
+
+마찬가지로 예외 클래스에 의존적이게 된다.
+
+예를들어 SQLException의 경우 Repository 단에서 해결이 안된다면 Service 단으로 던져야하고 거기서도 해결이 안되면 
+
+Controller, WAS까지 던지게 된다. 중간에서 예외를 처리한다고 해도 throw SQLException이나 try/catch에서 SQLException을 
+
+의존하게 되고 상황이 바뀌어 JPA를 쓴다고 가정했을때 모든 코드를 변경해야한다.
+
+
+    
+
 
 
 
