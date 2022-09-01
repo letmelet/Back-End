@@ -21,7 +21,7 @@ vpx
 
 - clb - Classic Load Balancer
 
-- xelb - Nginx Load Balancer
+- xelb - Nginx Load Balancer?
 
 
 
