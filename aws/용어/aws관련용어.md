@@ -4,6 +4,14 @@ sg(security group)
 route53
 vpx
 
+## Iaas - Infrastructure-as-a-service
+ 
+> 클라우드 인프라 서비스
+
+## Paas - Platform-as-a-service
+
+> 서비스로서의 플랫폼
+
 
 ## elb - Elastic Load Balancer
 
