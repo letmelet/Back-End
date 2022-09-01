@@ -29,3 +29,17 @@ vpx
 ## ACL - Access Control List
 
 ## NACL - Network Access Control List
+
+## SDP - Session Description Protocol
+
+## CIDR - Classless Inter-Domain Routing(사이더)
+
+## WAF - Web Application Firewall
+
+## IPS - Intrusion Prevention System
+
+
+
+
+
+
