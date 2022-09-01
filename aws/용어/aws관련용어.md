@@ -21,6 +21,8 @@ vpx
 
 - clb - Classic Load Balancer
 
+- xelb - Nginx Load Balancer
+
 
 
 ### sg - Security Group
