@@ -40,7 +40,7 @@ vpx
 
 ## SDP - Session Description Protocol
 
-## CIDR - Classless Inter-Domain Routing(사이더)
+## CIDR(사이더) - Classless Inter-Domain Routing
 
 ## WAF - Web Application Firewall
 
