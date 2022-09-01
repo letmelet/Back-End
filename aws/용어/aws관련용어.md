@@ -26,3 +26,6 @@ vpx
 
 ## CSP - Cloud Solution Provider / Content Security Policy
 
+## ACL - Access Control List
+
+## NACL - Network Access Control List
