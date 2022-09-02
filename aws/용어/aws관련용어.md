@@ -1,6 +1,6 @@
-xelb, ielb, nlb
+
 autoscaling
-sg(security group)
+
 route53
 vpx
 
