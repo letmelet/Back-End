@@ -43,7 +43,11 @@ vpx
 
 ## ACL - Access Control List
 
+> 접근 제어 목록
+
 ## NACL - Network Access Control List
+
+> 네트워크 접근 제어 목록
 
 ## SDP - Session Description Protocol
 
@@ -51,7 +55,13 @@ vpx
 
 ## WAF - Web Application Firewall
 
+> 웹 어플리케이션 방화벽. 보안관련
+
 ## IPS - Intrusion Prevention System
+
+## Auto Scaling
+
+> ELB등을 통해 사용자가 적은쪽 인스턴스로 연결시켜주어 한곳에 너무 많은 사용자가 몰리지 않게 해준다
 
 
 
