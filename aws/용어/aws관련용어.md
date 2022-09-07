@@ -1,3 +1,8 @@
+ec
+vpc
+rds
+s3
+
 
 autoscaling
 
