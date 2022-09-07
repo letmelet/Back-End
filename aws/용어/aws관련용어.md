@@ -20,6 +20,9 @@ vpx
 
 ## elb - Elastic Load Balancer
 
+> ELB는 Amazon EC2 인스턴스, 컨테이너 및 IP주소와 같은 여러 대상에 대해 수신 애플리케이션 또는 
+> 네트워크 트래픽을 여러 가용 영역에 배포한다.
+
 - nlb - Network Load Balancer
 
 - alb - Aplication Load Balancer
