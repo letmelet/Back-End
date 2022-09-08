@@ -35,12 +35,15 @@ vpx
 
 ### sg - Security Group
 
+> 보안 그룹
 
 ## VPN - Virtual Private Network
 
 ## VPC - Virtual Private Cloud
 
 ## GCP - Google Cloud Platform
+
+> 구글의 클라우드 플랫폼
 
 ## CSP - Cloud Solution Provider / Content Security Policy
 
