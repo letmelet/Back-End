@@ -1,6 +1,4 @@
-ec2에
-
-AMAZON LiNUX2 로 apache web server-> tomcat으로 서버 구성하기
+ec2에 AMAZON LiNUX2 로 apache web server-> tomcat으로 서버 구성하기
 
 원하는데로 aws에서 인스턴스 구성후 ssh로 접속(putty 등)
 
