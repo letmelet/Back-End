@@ -1,7 +1,7 @@
 ec
 vpc
 rds
-s3 
+s3  
 
 
 autoscaling
