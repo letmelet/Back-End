@@ -7,7 +7,7 @@ s3
 autoscaling
 
 route53
-vpx
+vpx 
 
 ## Iaas - Infrastructure-as-a-service
  
