@@ -9,6 +9,6 @@ sudo yum install httpd
 
 sudo yum install httpd-devel  // 아파치, 톰캣 연동시 mod_jk 사용하려면 설치
 
-아파치 설정 파일은 /etc/httpd 아래에 있음
+아파치 설정 파일은 /etc/httpd 아래에 있음 
 
 sudo service httpd start 로 실행후 public ip로 접속해보면 아파치 테스트화면이 뜨면 아파치 설치 성공  
