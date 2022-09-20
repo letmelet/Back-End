@@ -1,6 +1,6 @@
 ## Apache 서버 설치하기
 
-centos 사용
+centos 사용 
 
 - AWS 접속 후 aws에서 인스턴스 구성을 완료하고 ssh로 접속(putty 등)
 
