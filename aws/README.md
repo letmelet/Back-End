@@ -7,7 +7,7 @@ centos 사용
 아파치 설치
 sudo yum install httpd
 
-sudo yum install httpd-devel  // 아파치, 톰캣 연동시 mod_jk 사용하려면 설치
+sudo yum install httpd-devel  // 아파치, 톰캣 연동시 mod_jk 사용하려면 설치 
 
 아파치 설정 파일은 /etc/httpd 아래에 있음 
 
