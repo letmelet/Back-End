@@ -1,6 +1,6 @@
 ## MVC 디자인 패턴
 
-Model, View, Controller로 이루어진 디자인 패턴 
+Model, View, Controller로 이루어진 디자인 패턴  
 
 프로젝트를 구성할때 기능별로 model, view, controller로 나누어졌다.
 
