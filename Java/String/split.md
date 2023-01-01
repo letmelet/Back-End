@@ -1,4 +1,4 @@
-## split
+## split 
 
 > 문자열을 구분, 자르기 하는 JAVA의 String 메서드 
 
