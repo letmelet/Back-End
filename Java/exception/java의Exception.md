@@ -1,5 +1,5 @@
 
-## JAVA의 Exception  
+## JAVA의 Exception   
 
 JAVA의 예외는 크게 두가지로 나뉜다. 
 
